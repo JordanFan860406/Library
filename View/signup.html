@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>圖書館座位預約系統註冊</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="picture/Nknu_logo.png" type="image/ico"/>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- md5 js -->
+    <script type="text/javascript" src="JS/md5.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+    <!-- my web css -->
+    <link rel="stylesheet" href="CSS/web.css">
+    <style>
+      .background-signup{
+        background-image: url("picture/nknu.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+      }
+    </style>
+  </head>
+  <body style="font-family:Microsoft JhengHei;font-weight:bold;" class="background-signup">
+
+    <div id="sitebody">
+
+      <!-- navBAR 區塊 -->
+　     <div id="header">
+      <section>
+        <nav class="navbar navbar-expand-lg beta-menu navbar-dropdown align-items-center fixed-top navbar-toggleable-sm navbar-dark bg-dark">
+          <a class="navbar-brand" href="https://lis.nknu.edu.tw/zh/">
+            <img src="picture/Nknu_logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            高師大圖資處
+          </a>
+          <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">登入會員</a>
+              </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </section>
+      </div>
+      <!--********************************************************************************************** -->
+　     <div id="sidebar_left"></div>
+　     <div id="sidebar_right"></div>
+
+      <!-- 註冊區塊 -->
+　     <div id="content">
+        <section>
+          <div class="container-fluid">
+              <div class="col-md-12 align-center" style="text-align:center">
+                <form id="loginform" name="loginform" class="form-signin" Enctype="application/x-www-form-urlencoded">
+                  <img class="mb-4" src="picture/Nknu_logo.png" alt="" width="72" height="72">
+                  <font size="5">
+                    <h3 class="h3 mb-3 font-weight-normal">高師大座位預約系統</h3>
+                  </font>
+                  <h1 class="h3 mb-3 font-weight-normal">會員註冊</h1>
+                  <label for="account" class="sr-only">帳號</label>
+                  <input type="account" id="account" class="form-control" name="account" placeholder="帳號" required autofocus>
+                  <label for="password" class="sr-only">密碼</label>
+                  <input type="password" id="password" class="form-control" name="password" placeholder="密碼" required>
+                  <label for="checkpassword" class="sr-only">確認密碼</label>
+                  <input type="password" id="checkpassword" class="form-control" name="checkpassword" placeholder="確認密碼" required>
+                  <label for="name" class="sr-only">姓名</label>
+                  <input type="name" id="name" class="form-control" name="name" placeholder="姓名" required>
+                  <label for="personID" class="sr-only">身分證</label>
+                  <input type="personID" id="personID" class="form-control" name="personID" placeholder="身分證" required>
+                  <label for="email" class="sr-only">電子信箱</label>
+                  <input type="email" id="email" class="form-control" name="email" placeholder="電子信箱" required>
+                  <div class="checkbox mb-3">
+                    <label>
+                      <input type="checkbox" value="agree" required>是否同意服務條款
+                    </label>
+                  </div>
+                  <input type="submit" class="btn btn-lg btn-primary btn-block" value="註冊">
+                  <p class="mt-5 mb-3 text-muted">&copy; 國立高雄師範大學圖書資訊處</p>
+                </form>
+              </div>
+          </div>
+          </section>
+       </div>
+       <!-- ************************************************************************************ -->
+
+       <!-- footer 區塊 -->
+　     <div id="footer">
+        <footer >
+          <div>
+            <a href="#" style="color:white;">聯絡我們</a>
+          </div>
+          <div>
+            <p>[燕巢校區]: 82444高雄市燕巢區深中路62號</p>
+            <p>© Copyright 2018 NKNU - All Rights Reserved</p>
+          </div>
+        </footer>
+       </div>
+    </div>
+    <!-- ************************************************************************************************** -->
+    <!--Modal 用來代替alert-->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" style="position: fixed;">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title">高師大圖資處</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="alert">123</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="check" data-dismiss="modal">確定</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- **************************************************************************** -->
+    <!-- ajax 註冊處理 -->
+    <script type="text/JavaScript">
+    		$(document).ready(function() {
+    			$("#loginform").submit(function() {
+            var signup={
+              account: $('#account').val(),
+              password : $('#password').val(),
+              re_password : $('#checkpassword').val(),
+              name:$('#name').val(),
+              personID:$('#personID').val(),
+              email:$('#email').val()
+            }
+    				$.ajax({
+    					type:"POST",
+    					url: "/WEB/Library/API/register",
+    					dataType:'JSON',
+    					data:signup
+    				}).done(function(data) {
+    			        //成功的時候
+    			        console.log(data);
+    			        if(data.msg == "success")
+    			        {
+                    $('#alert').text('註冊成功，回到登入頁面');
+                    $('#myModal').modal('show');
+    			        	//註冊新增成功，轉跳到登入頁面。
+                    document.getElementById("check").onclick = function() {
+    			        	      window.location.href="index.html";
+                    };
+    			        }
+    			        else if(data.msg == "passwor_error")
+    			        {
+                    $('#alert').text('密碼與確認密碼不同，請重新輸入');
+                    $('#myModal').modal('show');
+                    //註冊新增成功，轉跳到登入頁面
+
+    			        }else if(data.msg == "account_already"){
+                    $('#alert').text('此帳號或姓名已註冊');
+                    $('#myModal').modal('show');
+                    document.getElementById("check").onclick = function() {
+    			        	      window.location.href="signup.html";
+                    };
+                    //註冊新增成功，轉跳到登入頁面
+                  }
+
+    			      }).fail(function(jqXHR, textStatus, errorThrown) {
+    			      	//失敗的時候
+    					alert(data);
+    			      	alert("有錯誤產生，請看 console log");
+    			        console.log(jqXHR.responseText);
+    			      });;
+    				return false;
+
+    			});
+
+    	});
+    </script>
+
+    <!-- jquery and js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
